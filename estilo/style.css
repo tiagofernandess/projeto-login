@@ -41,12 +41,14 @@ section#login {
 	height: 500px;
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+	transition: width 0.3s, height 0.3s;
+	transition-timing-function: ease;
 }
 
 section#login > div#imagem {
 	background: #5f2c82 url(../imagens/pexels-emrecan-2110951.jpg);
 	background-size: cover;
-	background-position: center top;
+	background-position: center center;
 	height: 200px;
 }
 
