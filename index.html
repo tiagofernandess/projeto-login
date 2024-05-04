@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<link rel="stylesheet" href="estilo/style.css">
 	<link rel="stylesheet" href="estilo/media-query.css">
 </head>
@@ -16,15 +17,23 @@
 			<div id="formulario">
 				<h1>Login</h1>
 				<p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-				<form action="login.php" method="post">
-					<label for="iemail">Email</label>
-					<input type="email" name="email" id="iemail"><br>
+				<form action="login.php" method="post" autocomplete="on">
+					<div>
+						<span class="material-symbols-outlined">person</span>
+						<input type="email" name="email" id="ilogin" placeholder="Seu e-mail" required autocomplete="email" maxlength="30">
+						<label for="ilogin">Login</label>
+					</div>
 
-					<label for="isenha">Senha</label>
-					<input type="password" name="senha" id="isenha">
+					<div>
+						<span class="material-symbols-outlined">vpn_key</span>
+						<input type="password" name="senha" id="isenha" placeholder="Sua senha" required autocomplete="new-password" min="8" maxlength="20">
+						<label for="isenha">Senha</label>
+					</div>
 
-					<input type="submit" value="Entrar"> <br>
-					<input type="submit" value="Esqueci a senha">
+					<input type="submit" value="Entrar">
+					<a href="esqueci.html">
+						Esqueci a senha <span class="material-symbols-outlined">mail</span>
+					</a>
 				</form>
 			</div>
 
